@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#171717">
   <title>Haven Connect</title>
   <style>
-    :root{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#171717;background:#f5f5f4}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:28px}.shell{width:min(860px,100%);display:grid;grid-template-columns:360px 1fr;border:1px solid #e4e3e1;border-radius:28px;overflow:hidden;background:#fff;box-shadow:0 25px 80px #00000013}.pair{padding:38px;background:#1d1d1f;color:#fff}.brand{font-size:30px;font-weight:850;letter-spacing:-1.6px}.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#bdbcc1;margin:9px 0 28px}.qr-shell{display:grid;place-items:center;width:252px;height:252px;background:#fff;border-radius:18px;margin:0 auto 22px;padding:15px}.qr-shell img,.qr-shell canvas{max-width:100%;max-height:100%}.pair h1{font-size:25px;letter-spacing:-.9px;margin:0 0 10px}.pair p{color:#dad9de;line-height:1.55;font-size:14px;margin:0}.session{font-size:12px;color:#a8a6ad;margin-top:16px}.inbox{padding:44px}.inbox h2{font-size:30px;letter-spacing:-1.2px;margin:0 0 9px}.lead{color:#77747d;line-height:1.55;margin:0 0 28px}.status{display:flex;gap:10px;align-items:center;border-radius:13px;background:#f5f5f6;padding:13px 14px;color:#5d5b62;font-size:14px;line-height:1.35;margin-bottom:22px}.dot{width:9px;height:9px;border-radius:50%;background:#96949a;flex:none}.status.waiting .dot{background:#e9a232}.status.connected{background:#eff8f1;color:#27643b}.status.connected .dot{background:#2a9b56}.status.error{background:#fff1f2;color:#a32743}.status.error .dot{background:#dd3358}.field{display:grid;gap:8px;font-size:13px;font-weight:700;margin:0 0 16px}.field input{width:100%;border:1px solid #dedde0;border-radius:11px;padding:14px;font:400 15px inherit;outline-color:#171717}.row{display:flex;justify-content:flex-end;gap:10px;margin-top:21px}button{border:0;border-radius:11px;background:#1d1d1f;color:#fff;padding:13px 18px;font:700 14px inherit;cursor:pointer}button:disabled{cursor:not-allowed;background:#d8d7da;color:#85838a}.hint{font-size:12px;line-height:1.5;color:#89878d;margin:26px 0 0}.troubleshoot{font-size:12px;line-height:1.55;color:#77747d;margin:17px 0 0}.troubleshoot strong{color:#414045}@media(max-width:720px){body{padding:16px}.shell{grid-template-columns:1fr}.pair{padding:30px}.inbox{padding:30px}.qr-shell{width:228px;height:228px}}
+    :root{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#171717;background:#f5f5f4}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:28px}.shell{width:min(860px,100%);display:grid;grid-template-columns:360px 1fr;border:1px solid #e4e3e1;border-radius:28px;overflow:hidden;background:#fff;box-shadow:0 25px 80px #00000013}.pair{padding:38px;background:#1d1d1f;color:#fff}.brand{font-size:30px;font-weight:850;letter-spacing:-1.6px}.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#bdbcc1;margin:9px 0 28px}.qr-shell{display:grid;place-items:center;width:252px;height:252px;background:#fff;border-radius:18px;margin:0 auto 22px;padding:15px}.qr-shell img,.qr-shell canvas{max-width:100%;max-height:100%}.pair h1{font-size:25px;letter-spacing:-.9px;margin:0 0 10px}.pair p{color:#dad9de;line-height:1.55;font-size:14px;margin:0}.session{font-size:12px;color:#a8a6ad;margin-top:16px}.inbox{padding:44px}.inbox h2{font-size:30px;letter-spacing:-1.2px;margin:0 0 9px}.lead{color:#77747d;line-height:1.55;margin:0 0 28px}.status{display:flex;gap:10px;align-items:center;border-radius:13px;background:#f5f5f6;padding:13px 14px;color:#5d5b62;font-size:14px;line-height:1.35;margin-bottom:22px}.dot{width:9px;height:9px;border-radius:50%;background:#96949a;flex:none}.status.waiting .dot{background:#e9a232}.status.connected{background:#eff8f1;color:#27643b}.status.connected .dot{background:#2a9b56}.status.error{background:#fff1f2;color:#a32743}.status.error .dot{background:#dd3358}.field{display:grid;gap:8px;font-size:13px;font-weight:700;margin:0 0 16px}.field input{width:100%;border:1px solid #dedde0;border-radius:11px;padding:14px;font:400 15px inherit;outline-color:#171717}.row{display:flex;justify-content:flex-end;gap:10px;margin-top:21px}button{border:0;border-radius:11px;background:#1d1d1f;color:#fff;padding:13px 18px;font:700 14px inherit;cursor:pointer}button:disabled{cursor:not-allowed;background:#d8d7da;color:#85838a}.received{margin-top:28px;padding-top:20px;border-top:1px solid #ecebed}.received h3{margin:0 0 11px;font-size:13px}.received p{margin:0;color:#89878d;font-size:12px;line-height:1.45}.received-list{display:grid;gap:8px;margin-top:12px}.received-card{display:flex;align-items:center;gap:10px;padding:11px;border:1px solid #e8e7ea;border-radius:12px;color:#29282d;text-decoration:none;font-size:13px;font-weight:700}.received-card::before{content:'↗';display:grid;place-items:center;width:27px;height:27px;border-radius:8px;background:#f1f0f3;color:#333239;font-size:15px;flex:none}.received-card span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.hint{font-size:12px;line-height:1.5;color:#89878d;margin:26px 0 0}.troubleshoot{font-size:12px;line-height:1.55;color:#77747d;margin:17px 0 0}.troubleshoot strong{color:#414045}@media(max-width:720px){body{padding:16px}.shell{grid-template-columns:1fr}.pair{padding:30px}.inbox{padding:30px}.qr-shell{width:228px;height:228px}}
   </style>
 </head>
 <body>
@@ -29,13 +29,14 @@
         <div class="row"><button id="send" disabled>Save to Haven</button></div>
       </form>
       <p class="troubleshoot"><strong>Same Wi‑Fi required.</strong> When your browser asks to find or connect to local devices, choose Allow. Keep Haven open while sending saves.</p>
+      <section class="received" id="received" hidden><h3>Received from your phone</h3><p>Links sent from Haven appear here for this private session.</p><div class="received-list" id="receivedList"></div></section>
       <p class="hint">No link, account, or browsing data passes through this page’s host. It goes directly from this browser to Haven on your phone.</p>
     </main>
   </section>
   <script src="qrcode.js"></script>
   <script>
     (() => {
-      const SESSION_LIFETIME_MS = 10 * 60 * 1000;
+      const SESSION_LIFETIME_MS = 30 * 60 * 1000;
       const startedAt = Date.now();
       const randomSession = () => {
         const bytes = new Uint8Array(24);
@@ -52,8 +53,12 @@
       const url = document.querySelector('#url');
       const title = document.querySelector('#title');
       const send = document.querySelector('#send');
+      const received = document.querySelector('#received');
+      const receivedList = document.querySelector('#receivedList');
       let connected = false;
       let finished = false;
+      let misses = 0;
+      let phoneCursor = 0;
 
       new QRCode(document.querySelector('#qr'), {text:qrPayload,width:220,height:220,colorDark:'#111111',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});
       const setStatus = (text, tone='waiting') => {
@@ -65,13 +70,19 @@
         url.disabled = false; title.disabled = false; send.disabled = false;
         setStatus('Connected directly to Haven on your phone.', 'connected');
       };
+      const setReconnecting = () => {
+        if (!connected) return;
+        connected = false;
+        url.disabled = true; title.disabled = true; send.disabled = true;
+        setStatus('Reconnecting to Haven on your phone…', 'waiting');
+      };
       const localFetch = (path, options={}) => {
         const headers = new Headers(options.headers || {});
         headers.set('X-Haven-Session', session);
         return fetch(`${endpoint}${path}`, {...options,headers,cache:'no-store',mode:'cors',targetAddressSpace:'local'});
       };
       const checkConnection = async () => {
-        if (finished || connected) return;
+        if (finished) return;
         if (Date.now() - startedAt >= SESSION_LIFETIME_MS) {
           finished = true;
           setStatus('This QR expired. Refresh this page to create a new one.', 'error');
@@ -79,16 +90,34 @@
         }
         try {
           const response = await localFetch(`/status?session=${encodeURIComponent(session)}`);
-          if (response.ok) setConnected();
+          if (response.ok) { misses = 0; if (!connected) setConnected(); pollPhoneLinks(); }
+          else if (++misses >= 3) setReconnecting();
         } catch (_) {
           // Haven has not scanned yet, the phone is on another network, or the browser has not granted local access.
+          if (++misses >= 3) setReconnecting();
         }
+      };
+      const addPhoneLink = item => {
+        const anchor = document.createElement('a');
+        anchor.className = 'received-card'; anchor.href = item.url; anchor.target = '_blank'; anchor.rel = 'noreferrer';
+        const label = document.createElement('span'); label.textContent = item.title || item.url;
+        anchor.append(label); receivedList.prepend(anchor); received.hidden = false;
+      };
+      const pollPhoneLinks = async () => {
+        if (!connected || finished) return;
+        try {
+          const response = await localFetch(`/api/phone-links?cursor=${encodeURIComponent(phoneCursor)}`);
+          const data = await response.json().catch(() => ({}));
+          if (!response.ok) return;
+          (Array.isArray(data.links) ? data.links : []).forEach(addPhoneLink);
+          phoneCursor = Math.max(phoneCursor, Number(data.cursor) || 0);
+        } catch (_) { /* Connection heartbeat handles a short network interruption. */ }
       };
       const refreshExpiry = () => {
         const seconds = Math.max(0, Math.ceil((SESSION_LIFETIME_MS - (Date.now() - startedAt)) / 1000));
         expiry.textContent = seconds ? `This QR expires in ${Math.ceil(seconds / 60)} min.` : 'This QR has expired.';
       };
-      setInterval(() => { checkConnection(); refreshExpiry(); }, 1500);
+      setInterval(() => { checkConnection(); refreshExpiry(); }, 2500);
       checkConnection(); refreshExpiry();
       form.addEventListener('submit', async event => {
         event.preventDefault();
